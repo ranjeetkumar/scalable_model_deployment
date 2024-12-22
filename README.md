@@ -1,3 +1,10 @@
+# Scalable Model Deployment
+
+This project focuses on training and deploying a scalable machine learning model using TensorFlow and Keras. The project includes data preprocessing, model training, and model checkpointing, and model deployment on gke.
+
+
+
+
 # Prediction Table Schema
 
 | **Field Name**           | **Type**     | **Mode**    | **Key** | **Collation** | **Default Value** | **Policy Tags** | **Description** |
