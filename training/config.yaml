@@ -1,0 +1,26 @@
+model_config:
+  version: "v1"
+  input_shape: [28, 28, 1]
+  num_classes: 10
+  
+training_config:
+  epochs: 10
+  batch_size: 32
+  validation_split: 0.2
+  early_stopping_patience: 3
+  learning_rate: 0.001
+  
+data_config:
+  preprocessing:
+    rescale: 0.003921569  # 1/255
+    validation_split: 0.2
+    
+  augmentation:
+    horizontal_flip: true
+    rotation_range: 10
+    zoom_range: 0.1
+    
+storage_config:
+  gcp_bucket_name: "your-model-bucket"
+  model_path: "models"
+  checkpoint_path: "checkpoints"
